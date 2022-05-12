@@ -1,0 +1,118 @@
+:root {
+    --dark: #555
+}
+
+body {
+    color: var(--dark);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.App {
+    min-height: 100vh;
+}
+
+.header {
+    position: relative;
+    z-index: 10;
+    /* border-bottom: 1px solid #ddd; */
+}
+.light-header h1, .light-header a{
+    color: white;
+}
+.header-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    /* color: white; */
+    padding: 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.header ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.header li a {
+    /* color: white; */
+    display: inline-block;
+    transition: .3s;
+    padding: 10px 20px;
+    transform: scale(1);
+}
+
+.header li a:hover {
+    transform: scale(1.2);
+}
+
+.header .current-page {
+    position: relative;
+}
+
+.header .current-page:after {
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.max-width-1200 {
+    max-width: 1200px;
+    margin: auto;
+}
+.yellow {
+    color: yellow;
+}
+
+footer {
+    margin-top: 80px;
+    padding-block: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+    background-color: #303636;
+}
+
+
+.btn {
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--dark);
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+
+}

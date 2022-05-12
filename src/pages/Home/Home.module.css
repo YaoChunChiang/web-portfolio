@@ -1,0 +1,122 @@
+.Home img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.HomeCoverImg {
+    overflow: hidden;
+    max-height: 100vh;
+    margin-top: -120px;
+    position: relative;
+}
+.HomeCoverImg .HomeCoverFont{
+    padding: 20px 40px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30 ,30 ,30 ,.7);
+}
+
+
+.HomeCoverImg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-image:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 13%);
+}
+
+.Home section {
+    /* margin-top: 40px; */
+    padding: 40px 0;
+}
+
+.Home section:nth-child(odd) {
+    background-color: #303636;
+    color: white;
+}
+
+.Home section h2 {
+    text-align: center;
+}
+.intro {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.bio {
+    min-width: 300px;
+    width: calc(100% - 250px - 50px);
+    text-align:justify;
+    font-size: 18px;
+    line-height: 2;
+    text-indent: 2.5em;
+}
+.bold {
+    font-weight: bold;
+}
+.introImgWrap {
+    flex: 0 0 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.skillSet {
+}
+
+.skillSet ul {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 140px;
+
+}
+
+.skillSet li{
+    min-width: 180px;
+    flex-basis: 10%;
+}
+
+.skillImgWrap{
+    width: 60%;
+    margin: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    margin-bottom: 20px;
+}
+.skillDescription {
+    text-align:center;
+}
+
+.getInTouch form{
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+}
+.getInTouch input,.getInTouch textarea  {
+    
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.getInTouch div {
+    align-self: center;
+}

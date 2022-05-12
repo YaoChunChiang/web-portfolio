@@ -1,0 +1,35 @@
+.BlogContainer{
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.BlogItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 40px;
+    margin-bottom: 120px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .2s;
+    /* border-bottom: 1px solid #ddd; */
+    border-top: 1px solid #ddd;
+}
+
+.BlogItem:hover {
+    transform: scale(1.02);
+}
+
+.BlogItem:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.BlogInfo {
+    padding-top: 30px;
+}
+
+.BlogInfo h2{
+    margin-bottom: 20px;
+}

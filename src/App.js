@@ -44,7 +44,7 @@ function Header () {
 function App() {
     
     return (
-    <Router basename="/">
+    <Router basename="/web-portfolio">
         <div className="App">
             <Header />
             <Routes>

@@ -1,7 +1,7 @@
 import './reset.css';
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Link,
@@ -44,7 +44,7 @@ function Header () {
 function App() {
     
     return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/">
         <div className="App">
             <Header />
             <Routes>

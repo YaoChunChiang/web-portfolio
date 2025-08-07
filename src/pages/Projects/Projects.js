@@ -81,7 +81,7 @@ export default function Projects() {
                         <li>CSS</li>
                         <li>HTML</li>
                     </ul>
-                    <a target="_blank" href="https://sunrise-guitar.alex-chiang.tech" className="btn">
+                    <a target="_blank" href="https://sunrise-guitar.alex-chiang.com" className="btn">
                         View Details
                     </a>
                 </div>

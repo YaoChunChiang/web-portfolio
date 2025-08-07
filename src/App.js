@@ -8,6 +8,7 @@ import {
   NavLink,
   useLocation
 } from "react-router-dom";
+import { useState } from 'react';
 import Experience from './pages/Experience/Experience.js'
 import Projects from './pages/Projects/Projects.js'
 import Blog from './pages/Blog/Blog'
@@ -16,24 +17,36 @@ import Home from './pages/Home/Home'
 
 function Header () {
     let location = useLocation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
     const isHome = () => {
         return location.pathname === '/';
     }
+    
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+    
     return (
         <header className="header">
             <div className={`header-container max-width-1200 ${isHome() && 'light-header'}`}>
                 <Link to="/">
                     <h1>Alex Chiang</h1>
                 </Link>
-                <ul>
+                <div className="mobile-menu-toggle" onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
                     <li>
-                        <NavLink activeClassName="current-page" to="Experience">Experience</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Experience" onClick={() => setIsMenuOpen(false)}>Experience</NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="current-page" to="Projects">Projects</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Projects" onClick={() => setIsMenuOpen(false)}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="current-page" to="Blog">Blog</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Blog" onClick={() => setIsMenuOpen(false)}>Blog</NavLink>
                     </li>
                 </ul>
             </div>

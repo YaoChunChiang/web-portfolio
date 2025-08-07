@@ -120,3 +120,37 @@
 .getInTouch div {
     align-self: center;
 }
+
+/* Responsive Design for Hero Section Only */
+@media (max-width: 768px) {
+    .HomeCoverImg .HomeCoverFont {
+        font-size: 36px;
+        padding: 15px 25px;
+        text-align: center;
+        width: 90%;
+        max-width: 500px;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .HomeCoverImg .HomeCoverFont {
+        font-size: 28px;
+        padding: 12px 20px;
+        width: 95%;
+        max-width: 400px;
+        top: 65%;
+    }
+}
+
+@media (max-width: 320px) {
+    .HomeCoverImg .HomeCoverFont {
+        font-size: 22px;
+        padding: 10px 15px;
+        width: 98%;
+        max-width: 300px;
+        top: 70%;
+    }
+}

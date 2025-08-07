@@ -38,3 +38,67 @@
 .moreInfo span {
     margin-inline: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience {
+        width: 90%;
+        margin: 30px auto;
+        padding-block: 30px;
+    }
+    
+    .experienceImgWrap {
+        width: 200px;
+    }
+    
+    .experience ul {
+        max-width: 280px;
+    }
+    
+    .moreInfo span {
+        margin-inline: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        width: 95%;
+        margin: 20px auto;
+        padding-block: 20px;
+    }
+    
+    .experienceImgWrap {
+        width: 150px;
+    }
+    
+    .experience ul {
+        max-width: 250px;
+        font-size: 14px;
+    }
+    
+    .moreInfo span {
+        margin-inline: 10px;
+        font-size: 12px;
+    }
+    
+    .experience li {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .experience {
+        width: 98%;
+        padding-block: 15px;
+    }
+    
+    .experienceImgWrap {
+        width: 120px;
+    }
+    
+    .experience ul {
+        max-width: 200px;
+        font-size: 13px;
+    }
+}

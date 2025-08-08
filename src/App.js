@@ -40,13 +40,13 @@ function Header () {
                 </div>
                 <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
                     <li>
-                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Experience" onClick={() => setIsMenuOpen(false)}>Experience</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="/Experience" onClick={() => setIsMenuOpen(false)}>Experience</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Projects" onClick={() => setIsMenuOpen(false)}>Projects</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="/Projects" onClick={() => setIsMenuOpen(false)}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="Blog" onClick={() => setIsMenuOpen(false)}>Blog</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? "current-page" : ""} to="/Blog" onClick={() => setIsMenuOpen(false)}>Blog</NavLink>
                     </li>
                 </ul>
             </div>
